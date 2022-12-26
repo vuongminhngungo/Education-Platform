@@ -16,16 +16,20 @@ body {
 }
 .btn {
   display: inline-block;
-  background: #171100;
-  padding: 11px 42px;
+  background-color: #171100;
+  border: 1px solid #171100;
+  padding: 10px 42px;
+  font-weight: 600;
   border-radius: 25px;
   font-size: 1.6rem;
   line-height: 1.75;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
-header.header {
+header.fixed-header {
   padding-top: 36px;
+  background: #fffcf4;
   .container {
     // navbar
     nav.navbar {
@@ -40,7 +44,7 @@ header.header {
           margin-left: 44px;
           > a {
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 1.6rem;
             line-height: 1.75;
             text-align: center;
@@ -48,15 +52,298 @@ header.header {
           }
           &:first-child {
             margin-left: 0;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 2px;
+              background-color: #171100;
+              bottom: 0;
+              left: 0;
+            }
           }
           &:first-child a {
             color: #171100;
+            font-weight: 600;
           }
         }
       }
       //   Action btn
       .action {
         margin-left: 70px;
+      }
+    }
+  }
+}
+// header
+header.header {
+  background: #fffcf4;
+  padding: 64px 0px;
+  .container {
+    .hero {
+      display: flex;
+      justify-content: center;
+      .img-block {
+        position: relative;
+        width: 270px;
+        .hero-img {
+          object-fit: cover;
+        }
+        .stats-list {
+          position: absolute;
+          bottom: 48px;
+          left: 300px;
+          padding: 24px 58px 24px 24px;
+          background: #ffffff;
+          box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+          border-radius: 12px;
+          .stats-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            .stats-img {
+              width: 48px;
+              height: 48px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+            }
+            .row {
+              margin-left: 16px;
+              .sub {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.86;
+                color: #5f5b53;
+              }
+              .title {
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 1.67;
+                color: #171100;
+              }
+            }
+          }
+        }
+      }
+      .info {
+        padding: 64px 0px;
+        width: 470px;
+        margin-left: auto;
+        .title {
+          font-family: "Sen", sans-serif;
+          font-weight: 700;
+          font-size: 5.8rem;
+          line-height: 1.17;
+          letter-spacing: -0.02em;
+          color: #171100;
+        }
+        .desc {
+          margin-top: 12px;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 1.67;
+          color: #5f5b53;
+        }
+        .join-courses {
+          display: flex;
+          align-items: center;
+          margin-top: 38px;
+          margin-bottom: 42px;
+          .courses-btn {
+            padding: 17px 42px;
+            border-radius: 32px;
+            border: 1px solid #ffb900;
+            background: #ffb900;
+          }
+          .video-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #ffffff;
+            border-radius: 50%;
+            margin-left: 28px;
+            margin-right: 14px;
+            cursor: pointer;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+            > i {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #ffb900;
+            }
+          }
+          a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 1.67;
+            color: #171100;
+          }
+        }
+        .quantity {
+          .participants {
+            margin-right: 28px;
+            .value {
+              font-size: 3.8rem;
+              color: #171100;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Courese
+.courese {
+  padding: 200px 0px;
+  background: #e5e5e5;
+  .container {
+    // headding
+    h2.title {
+      font-family: "Sen", sans-serif;
+      font-weight: 700;
+      font-size: 3.8rem;
+      line-height: 1.26;
+      letter-spacing: -0.02em;
+      color: #171100;
+    }
+    .row {
+      display: flex;
+      p.desc {
+        width: 458px;
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        color: #5f5b53;
+      }
+      .courese-more {
+        margin-left: auto;
+        button {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #ffb900;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .back {
+          color: #ffb900;
+          background: transparent;
+        }
+        .come {
+          margin-left: 18px;
+          color: #ffffff;
+          background: #ffb900;
+        }
+      }
+    }
+    // cards
+    .courese-cards {
+      display: flex;
+      gap: 30px;
+      margin-top: 55px;
+      .card {
+        background: #ffffff;
+        box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        .courese-img {
+          object-fit: cover;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+        // content
+        .content {
+          padding: 16px 22px 22px 22px;
+          .row {
+            display: flex;
+            align-items: center;
+            h3.title a {
+              text-decoration: none;
+              font-weight: 600;
+              font-size: 1.8rem;
+              line-height: 1.67;
+              color: #171100;
+            }
+            span.reviews {
+              margin-left: auto;
+              color: #fea31b;
+            }
+            span.price {
+              font-weight: 600;
+              font-size: 1.8rem;
+              line-height: 1.67;
+              color: #171100;
+            }
+            button.book-now {
+              margin-left: auto;
+              padding: 10px 19px;
+            }
+            button.book-first {
+              background: #ffb900;
+              border: 1px solid #ffb900;
+            }
+          }
+          p.desc {
+            margin: 6px 0px 12px;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.86;
+            color: #5f5b53;
+          }
+        }
+      }
+    }
+  }
+}
+// Feedback
+.feedback {
+  padding: 96px 135px;
+  background: #2e2100;
+  .container {
+    .row {
+      display: flex;
+      .info {
+        .avart {
+          width: 72px;
+          height: 72px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        span.name {
+          display: block;
+          margin: 18px 0px 4px;
+          font-family: "Sen", sans-serif;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 1.42;
+          color: #f7f7f7;
+        }
+        p.title {
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 1.86;
+          color: #bfbcb3;
+        }
+      }
+      .feedback-info {
+        margin-left: auto;
+        width: 770px;
+        > i {
+          margin-left: -28px;
+          font-size: 30px;
+          color: #634700;
+        }
+        p.desc {
+          font-style: italic;
+          font-weight: 400;
+          font-size: 2.6rem;
+          line-height: 1.54;
+          color: #ffffff;
+        }
       }
     }
   }
