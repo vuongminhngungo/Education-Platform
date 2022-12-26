@@ -1,1 +1,61 @@
-/*# sourceMappingURL=basic.css.map */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #171100;
+  padding: 11px 42px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #ffffff;
+}
+
+header.header {
+  padding-top: 36px;
+}
+header.header .container nav.navbar {
+  display: flex;
+  align-items: center;
+}
+header.header .container nav.navbar > ul {
+  display: flex;
+  margin-left: 512px;
+}
+header.header .container nav.navbar > ul > li {
+  margin-left: 44px;
+}
+header.header .container nav.navbar > ul > li > a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #5f5b53;
+}
+header.header .container nav.navbar > ul > li:first-child {
+  margin-left: 0;
+}
+header.header .container nav.navbar > ul > li:first-child a {
+  color: #171100;
+}
+header.header .container nav.navbar .action {
+  margin-left: 70px;
+}/*# sourceMappingURL=basic.css.map */
