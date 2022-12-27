@@ -485,4 +485,79 @@ header.header .container .hero .info .quantity .participants .value {
 .our-blog .container .dot-line i {
   font-size: 6px;
   color: #ffb900;
+}
+
+footer.footer {
+  padding: 96px 28px;
+  background: #2e2100;
+}
+footer.footer .container .row-top {
+  display: flex;
+  gap: 130px;
+}
+footer.footer .container .row-top .column h3.title a {
+  text-decoration: none;
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.42;
+  color: #ffffff;
+}
+footer.footer .container .row-top .column h3.title a i {
+  font-size: 6px;
+  color: #ffb900;
+}
+footer.footer .container .row-top .column p.desc {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+footer.footer .container .row-top .column ul.brand {
+  display: flex;
+  margin-top: 18px;
+}
+footer.footer .container .row-top .column ul.brand li {
+  margin-right: 18px;
+}
+footer.footer .container .row-top .column h4.title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #ffffff;
+}
+footer.footer .container .row-top .column hr {
+  width: 138px;
+  height: 1px;
+  margin: 14px 0px 28px;
+  background: #59554b;
+  border: none;
+}
+footer.footer .container .row-top .column ul li {
+  margin-bottom: 12px;
+}
+footer.footer .container .row-top .column ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+footer.footer .container .row-top .social .content {
+  width: 267px;
+}
+footer.footer .container .row-bottom hr.line {
+  margin: 26px 0px 28px;
+  height: 1px;
+  background: #59554b;
+  border: none;
+}
+footer.footer .container .row-bottom span.coppy-right {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: #807d74;
 }/*# sourceMappingURL=basic.css.map */

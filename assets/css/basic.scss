@@ -508,3 +508,89 @@ header.header {
     }
   }
 }
+// Footer
+footer.footer {
+  padding: 96px 28px;
+  background: #2e2100;
+  .container {
+    .row-top {
+      display: flex;
+      gap: 130px;
+      .column {
+        h3.title a {
+          text-decoration: none;
+          font-family: "Sen";
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 1.42;
+          color: #ffffff;
+          i {
+            font-size: 6px;
+            color: #ffb900;
+          }
+        }
+        p.desc {
+          margin-top: 18px;
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 1.86;
+          color: #bfbcb2;
+        }
+        // brand
+        ul.brand {
+          display: flex;
+          margin-top: 18px;
+          li {
+            margin-right: 18px;
+          }
+        }
+        h4.title {
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 1.75;
+          color: #ffffff;
+        }
+        hr {
+          width: 138px;
+          height: 1px;
+          margin: 14px 0px 28px;
+          background: #59554b;
+          border: none;
+        }
+        ul {
+          li {
+            margin-bottom: 12px;
+            a {
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 1.4rem;
+              line-height: 1.86;
+              color: #bfbcb2;
+            }
+          }
+        }
+      }
+      .social {
+        .content {
+          width: 267px;
+        }
+      }
+    }
+    .row-bottom {
+      hr.line {
+        margin: 26px 0px 28px;
+        height: 1px;
+        background: #59554b;
+        border: none;
+      }
+      span.coppy-right {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.86;
+        text-align: center;
+        color: #807d74;
+      }
+    }
+  }
+}
