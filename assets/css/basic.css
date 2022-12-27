@@ -292,7 +292,7 @@ header.header .container .hero .info .quantity .participants .value {
 }
 
 .feedback {
-  padding: 96px 135px;
+  padding: 96px 0;
   background: #2e2100;
 }
 .feedback .container .row {
@@ -335,4 +335,154 @@ header.header .container .hero .info .quantity .participants .value {
   font-size: 2.6rem;
   line-height: 1.54;
   color: #ffffff;
+}
+
+.Course-results {
+  padding: 200px 0;
+}
+.Course-results .container .row {
+  display: flex;
+}
+.Course-results .container .row .img-block {
+  display: flex;
+  width: 50%;
+  gap: 30px;
+}
+.Course-results .container .row .img-block .image-reults {
+  margin-top: 34px;
+}
+.Course-results .container .row .img-block .image-reults:last-child {
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+.Course-results .container .row .img-second {
+  margin-left: auto;
+}
+.Course-results .container .row .content {
+  width: 50%;
+  padding: 43px 0px 43px 113px;
+}
+.Course-results .container .row .content .title {
+  margin-bottom: 16px;
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+.Course-results .container .row .content .desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+.Course-results .container .row .content .desc:nth-child(3) {
+  margin-top: 40px;
+}
+.Course-results .container .row .content .btn {
+  margin-top: 38px;
+  border: 1px solid #ffb900;
+  padding: 10px 37px;
+  background: #ffb900;
+}
+.Course-results .container .row .second {
+  padding: 67px 0px 69px;
+}
+.Course-results .container .row:last-child {
+  padding-top: 200px;
+}
+
+.our-blog {
+  padding: 96px 0px 102px;
+  background: #fffcf4;
+}
+.our-blog .container .headding {
+  text-align: center;
+  padding: 0px 361px;
+}
+.our-blog .container .headding h2.title {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #130606;
+}
+.our-blog .container .headding p.desc {
+  margin: 16px 0px 55px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #696262;
+}
+.our-blog .container .our-blog-cards {
+  display: flex;
+  gap: 30px;
+}
+.our-blog .container .our-blog-cards > a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+.our-blog .container .our-blog-cards .content {
+  background: #ffffff;
+  padding: 20px 20px 28px 20px;
+  border-radius: 0px 0px 16px 16px;
+}
+.our-blog .container .our-blog-cards .content .row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.our-blog .container .our-blog-cards .content .row i {
+  font-size: 6px;
+  color: #ffb900;
+}
+.our-blog .container .our-blog-cards .content .row span.date {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+.our-blog .container .our-blog-cards .content h3.title a {
+  display: inline-block;
+  margin-top: 25px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #171100;
+}
+.our-blog .container .our-blog-cards .content h3.title a::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 160px;
+  height: 1px;
+  background: #e2dfda;
+}
+.our-blog .container .our-blog-cards .content button.read-more {
+  margin-top: 14px;
+  padding: 10px 14px;
+}
+.our-blog .container .our-blog-cards .content .read-first {
+  background: #ffb900;
+  border: 1px solid #ffb900;
+}
+.our-blog .container .dot-line {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.our-blog .container .dot-line i {
+  font-size: 6px;
+  color: #ffb900;
 }/*# sourceMappingURL=basic.css.map */
